@@ -14,15 +14,35 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Uppgift_1
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        Gryffindor gryffindor;
+        Slytherin slytherin;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            gryffindor = new Gryffindor();
+            slytherin = new Slytherin();
+
+            slytherin.NewPassword(slytherin.Password, "Voldemort");
+            gryffindor.NewPassword(gryffindor.Password, "En tjock dam");
+
+                
+
         }
+
+        
     }
+
 }
+
+
+    
+      
+
