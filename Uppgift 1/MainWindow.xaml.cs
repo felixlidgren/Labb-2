@@ -30,7 +30,7 @@ namespace Uppgift_1
             gryffindor = new Gryffindor();
             slytherin = new Slytherin();
 
-            slytherin.NewPassword(slytherin.Password, "Voldemort");
+            slytherin.NewPassword(slytherin.Password, "Dumbledor");
             gryffindor.NewPassword(gryffindor.Password, "En tjock dam");
 
                 
